@@ -1,0 +1,61 @@
+customer_id,customer_name,email,location,segment
+1001,Morgan Smith,morgan.smith1001@example.com,Seattle,Consumer
+1002,Sam Brown,sam.brown1002@example.com,San Francisco,Consumer
+1003,Jordan Smith,jordan.smith1003@example.com,San Francisco,Consumer
+1004,Kendall Martin,kendall.martin1004@example.com,New York,Consumer
+1005,Emerson Wilson,emerson.wilson1005@example.com,Austin,Consumer
+1006,Jamie Smith,jamie.smith1006@example.com,Chicago,Corporate
+1007,Dakota Rodriguez,dakota.rodriguez1007@example.com,Chicago,Consumer
+1008,Dakota Brown,dakota.brown1008@example.com,San Francisco,Consumer
+1009,Reese Lopez,reese.lopez1009@example.com,Seattle,Corporate
+1010,Logan Moore,logan.moore1010@example.com,San Francisco,Wholesale
+1011,Rowan Williams,rowan.williams1011@example.com,Seattle,Corporate
+1012,Harper Lopez,harper.lopez1012@example.com,Austin,Corporate
+1013,Jordan Davis,jordan.davis1013@example.com,Seattle,Wholesale
+1014,Riley Brown,riley.brown1014@example.com,Denver,Consumer
+1015,Reese Garcia,reese.garcia1015@example.com,Boston,Consumer
+1016,Jamie Williams,jamie.williams1016@example.com,Chicago,Consumer
+1017,Riley Garcia,riley.garcia1017@example.com,Atlanta,Consumer
+1018,Emerson Davis,emerson.davis1018@example.com,Boston,Corporate
+1019,Jordan Davis,jordan.davis1019@example.com,New York,Corporate
+1020,Rowan Rodriguez,rowan.rodriguez1020@example.com,San Francisco,Consumer
+1021,Finley Hernandez,finley.hernandez1021@example.com,Austin,Corporate
+1022,Rowan Anderson,rowan.anderson1022@example.com,Chicago,Consumer
+1023,Riley Moore,riley.moore1023@example.com,Seattle,Corporate
+1024,Hayden Jackson,hayden.jackson1024@example.com,Denver,Consumer
+1025,Sam Taylor,sam.taylor1025@example.com,Atlanta,Consumer
+1026,Jordan Brown,jordan.brown1026@example.com,Chicago,Consumer
+1027,Hayden Martin,hayden.martin1027@example.com,San Francisco,Consumer
+1028,Harper Anderson,harper.anderson1028@example.com,Seattle,Wholesale
+1029,Alex Brown,alex.brown1029@example.com,Seattle,Corporate
+1030,Dakota Brown,dakota.brown1030@example.com,Seattle,Consumer
+1031,Logan Smith,logan.smith1031@example.com,Seattle,Wholesale
+1032,Chris Taylor,chris.taylor1032@example.com,San Francisco,Corporate
+1033,Avery Taylor,avery.taylor1033@example.com,Austin,Consumer
+1034,Chris Moore,chris.moore1034@example.com,New York,Consumer
+1035,Peyton Smith,peyton.smith1035@example.com,San Francisco,Wholesale
+1036,Avery Davis,avery.davis1036@example.com,New York,Consumer
+1037,Finley Williams,finley.williams1037@example.com,San Francisco,Corporate
+1038,Taylor Moore,taylor.moore1038@example.com,Chicago,Consumer
+1039,Peyton Moore,peyton.moore1039@example.com,Chicago,Consumer
+1040,Harper Wilson,harper.wilson1040@example.com,Austin,Wholesale
+1041,Casey Martinez,casey.martinez1041@example.com,Denver,Wholesale
+1042,Reese Anderson,reese.anderson1042@example.com,Atlanta,Consumer
+1043,Riley Williams,riley.williams1043@example.com,Boston,Consumer
+1044,Emerson Davis,emerson.davis1044@example.com,Austin,Consumer
+1045,Jordan Davis,jordan.davis1045@example.com,San Francisco,Wholesale
+1046,Dakota Williams,dakota.williams1046@example.com,Austin,Consumer
+1047,Peyton Miller,peyton.miller1047@example.com,Chicago,Corporate
+1048,Finley Jackson,finley.jackson1048@example.com,Atlanta,Consumer
+1049,Peyton Wilson,peyton.wilson1049@example.com,Austin,Consumer
+1050,Hayden Lopez,hayden.lopez1050@example.com,Denver,Consumer
+1051,Jordan Brown,jordan.brown1051@example.com,New York,Consumer
+1052,Dakota Brown,dakota.brown1052@example.com,Austin,Consumer
+1053,Emerson Anderson,emerson.anderson1053@example.com,Chicago,Consumer
+1054,Jamie Anderson,jamie.anderson1054@example.com,Austin,Corporate
+1055,Taylor Anderson,taylor.anderson1055@example.com,San Francisco,Consumer
+1056,Emerson Smith,emerson.smith1056@example.com,San Francisco,Wholesale
+1057,Riley Garcia,riley.garcia1057@example.com,Denver,Consumer
+1058,Casey Gonzalez,casey.gonzalez1058@example.com,New York,Consumer
+1059,Alex Gonzalez,alex.gonzalez1059@example.com,Seattle,Wholesale
+1060,Logan Martinez,logan.martinez1060@example.com,Denver,Corporate

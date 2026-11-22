@@ -1,0 +1,17 @@
+product_id,product_name,category_id,cost_price,list_price,stock_quantity,reorder_level
+101,Ultra HD Monitor 27-inch,1,180.0,299.99,85,20
+102,Wireless Mechanical Keyboard,1,45.0,89.99,140,25
+103,Ergonomic Vertical Mouse,1,20.0,49.99,110,15
+104,Noise Cancelling Headphones,1,110.0,199.99,60,10
+105,Smart Watch Pro,1,95.0,179.99,45,10
+201,Stainless Steel Air Fryer 5L,2,40.0,79.99,75,15
+202,Espresso Coffee Machine,2,120.0,249.99,30,8
+203,Cast Iron Skillet Set,2,28.0,59.99,90,20
+204,Robotic Vacuum Cleaner,2,150.0,299.99,40,10
+301,Men's Performance Jacket,3,35.0,85.0,120,30
+302,Women's Seamless Yoga Pants,3,18.0,45.0,200,40
+303,Waterproof Trail Running Shoes,3,42.0,110.0,80,20
+401,Organic Whey Protein 2kg,4,25.0,54.99,150,30
+402,Adjustable Dumbbell Set,4,85.0,169.99,35,10
+501,Ergonomic High-Back Mesh Chair,5,90.0,219.99,50,15
+502,Electric Height-Adjustable Standing Desk,5,180.0,399.99,25,5

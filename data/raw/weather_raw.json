@@ -1,0 +1,2936 @@
+[
+  {
+    "record_id": 1,
+    "recorded_date": "2026-01-01",
+    "location": "New York",
+    "temperature": 1.0,
+    "humidity": 56.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 2,
+    "recorded_date": "2026-01-02",
+    "location": "New York",
+    "temperature": 2.0,
+    "humidity": 57.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 3,
+    "recorded_date": "2026-01-03",
+    "location": "New York",
+    "temperature": 3.0,
+    "humidity": 58.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 4,
+    "recorded_date": "2026-01-04",
+    "location": "New York",
+    "temperature": 4.0,
+    "humidity": 59.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 5,
+    "recorded_date": "2026-01-05",
+    "location": "New York",
+    "temperature": 0.0,
+    "humidity": 60.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 6,
+    "recorded_date": "2026-01-06",
+    "location": "New York",
+    "temperature": 1.0,
+    "humidity": 61.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 7,
+    "recorded_date": "2026-01-07",
+    "location": "New York",
+    "temperature": 2.0,
+    "humidity": 62.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 8,
+    "recorded_date": "2026-01-08",
+    "location": "New York",
+    "temperature": 3.0,
+    "humidity": 63.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 9,
+    "recorded_date": "2026-01-09",
+    "location": "New York",
+    "temperature": 4.0,
+    "humidity": 64.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 10,
+    "recorded_date": "2026-01-10",
+    "location": "New York",
+    "temperature": 0.0,
+    "humidity": 65.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 11,
+    "recorded_date": "2026-01-11",
+    "location": "New York",
+    "temperature": 1.0,
+    "humidity": 66.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 12,
+    "recorded_date": "2026-01-12",
+    "location": "New York",
+    "temperature": 2.0,
+    "humidity": 67.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 13,
+    "recorded_date": "2026-01-13",
+    "location": "New York",
+    "temperature": 3.0,
+    "humidity": 68.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 14,
+    "recorded_date": "2026-01-14",
+    "location": "New York",
+    "temperature": 4.0,
+    "humidity": 69.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 15,
+    "recorded_date": "2026-01-15",
+    "location": "New York",
+    "temperature": 0.0,
+    "humidity": 70.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 16,
+    "recorded_date": "2026-01-16",
+    "location": "New York",
+    "temperature": 1.0,
+    "humidity": 71.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 17,
+    "recorded_date": "2026-01-17",
+    "location": "New York",
+    "temperature": 2.0,
+    "humidity": 72.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 18,
+    "recorded_date": "2026-01-18",
+    "location": "New York",
+    "temperature": 3.0,
+    "humidity": 73.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 19,
+    "recorded_date": "2026-01-19",
+    "location": "New York",
+    "temperature": 4.0,
+    "humidity": 74.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 20,
+    "recorded_date": "2026-01-20",
+    "location": "New York",
+    "temperature": 0.0,
+    "humidity": 55.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 21,
+    "recorded_date": "2026-01-21",
+    "location": "New York",
+    "temperature": 1.0,
+    "humidity": 56.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 22,
+    "recorded_date": "2026-01-22",
+    "location": "New York",
+    "temperature": 2.0,
+    "humidity": 57.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 23,
+    "recorded_date": "2026-01-23",
+    "location": "New York",
+    "temperature": 3.0,
+    "humidity": 58.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 24,
+    "recorded_date": "2026-01-24",
+    "location": "New York",
+    "temperature": 4.0,
+    "humidity": 59.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 25,
+    "recorded_date": "2026-01-25",
+    "location": "New York",
+    "temperature": 0.0,
+    "humidity": 60.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 26,
+    "recorded_date": "2026-01-26",
+    "location": "New York",
+    "temperature": 1.0,
+    "humidity": 61.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 27,
+    "recorded_date": "2026-01-27",
+    "location": "New York",
+    "temperature": 2.0,
+    "humidity": 62.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 28,
+    "recorded_date": "2026-01-28",
+    "location": "New York",
+    "temperature": 3.0,
+    "humidity": 63.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 29,
+    "recorded_date": "2026-01-29",
+    "location": "New York",
+    "temperature": 4.0,
+    "humidity": 64.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 30,
+    "recorded_date": "2026-01-30",
+    "location": "New York",
+    "temperature": 0.0,
+    "humidity": 65.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 31,
+    "recorded_date": "2026-01-31",
+    "location": "New York",
+    "temperature": 1.0,
+    "humidity": 66.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 32,
+    "recorded_date": "2026-02-01",
+    "location": "New York",
+    "temperature": 1.0,
+    "humidity": 56.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 33,
+    "recorded_date": "2026-02-02",
+    "location": "New York",
+    "temperature": 2.0,
+    "humidity": 57.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 34,
+    "recorded_date": "2026-02-03",
+    "location": "New York",
+    "temperature": 3.0,
+    "humidity": 58.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 35,
+    "recorded_date": "2026-02-04",
+    "location": "New York",
+    "temperature": 4.0,
+    "humidity": 59.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 36,
+    "recorded_date": "2026-02-05",
+    "location": "New York",
+    "temperature": 0.0,
+    "humidity": 60.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 37,
+    "recorded_date": "2026-02-06",
+    "location": "New York",
+    "temperature": 1.0,
+    "humidity": 61.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 38,
+    "recorded_date": "2026-02-07",
+    "location": "New York",
+    "temperature": 2.0,
+    "humidity": 62.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 39,
+    "recorded_date": "2026-02-08",
+    "location": "New York",
+    "temperature": 3.0,
+    "humidity": 63.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 40,
+    "recorded_date": "2026-02-09",
+    "location": "New York",
+    "temperature": 4.0,
+    "humidity": 64.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 41,
+    "recorded_date": "2026-02-10",
+    "location": "New York",
+    "temperature": 0.0,
+    "humidity": 65.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 42,
+    "recorded_date": "2026-02-11",
+    "location": "New York",
+    "temperature": 1.0,
+    "humidity": 66.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 43,
+    "recorded_date": "2026-02-12",
+    "location": "New York",
+    "temperature": 2.0,
+    "humidity": 67.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 44,
+    "recorded_date": "2026-02-13",
+    "location": "New York",
+    "temperature": 3.0,
+    "humidity": 68.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 45,
+    "recorded_date": "2026-02-14",
+    "location": "New York",
+    "temperature": 4.0,
+    "humidity": 69.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 46,
+    "recorded_date": "2026-02-15",
+    "location": "New York",
+    "temperature": 0.0,
+    "humidity": 70.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 47,
+    "recorded_date": "2026-02-16",
+    "location": "New York",
+    "temperature": 1.0,
+    "humidity": 71.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 48,
+    "recorded_date": "2026-02-17",
+    "location": "New York",
+    "temperature": 2.0,
+    "humidity": 72.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 49,
+    "recorded_date": "2026-02-18",
+    "location": "New York",
+    "temperature": 3.0,
+    "humidity": 73.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 50,
+    "recorded_date": "2026-02-19",
+    "location": "New York",
+    "temperature": 4.0,
+    "humidity": 74.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 51,
+    "recorded_date": "2026-02-20",
+    "location": "New York",
+    "temperature": 0.0,
+    "humidity": 55.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 52,
+    "recorded_date": "2026-02-21",
+    "location": "New York",
+    "temperature": 1.0,
+    "humidity": 56.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 53,
+    "recorded_date": "2026-02-22",
+    "location": "New York",
+    "temperature": 2.0,
+    "humidity": 57.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 54,
+    "recorded_date": "2026-02-23",
+    "location": "New York",
+    "temperature": 3.0,
+    "humidity": 58.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 55,
+    "recorded_date": "2026-02-24",
+    "location": "New York",
+    "temperature": 4.0,
+    "humidity": 59.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 56,
+    "recorded_date": "2026-02-25",
+    "location": "New York",
+    "temperature": 0.0,
+    "humidity": 60.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 57,
+    "recorded_date": "2026-02-26",
+    "location": "New York",
+    "temperature": 1.0,
+    "humidity": 61.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 58,
+    "recorded_date": "2026-02-27",
+    "location": "New York",
+    "temperature": 2.0,
+    "humidity": 62.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 59,
+    "recorded_date": "2026-02-28",
+    "location": "New York",
+    "temperature": 3.0,
+    "humidity": 63.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 60,
+    "recorded_date": "2026-03-01",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 56.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 61,
+    "recorded_date": "2026-03-02",
+    "location": "New York",
+    "temperature": 15.0,
+    "humidity": 57.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 62,
+    "recorded_date": "2026-03-03",
+    "location": "New York",
+    "temperature": 16.0,
+    "humidity": 58.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 63,
+    "recorded_date": "2026-03-04",
+    "location": "New York",
+    "temperature": 17.0,
+    "humidity": 59.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 64,
+    "recorded_date": "2026-03-05",
+    "location": "New York",
+    "temperature": 13.0,
+    "humidity": 60.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 65,
+    "recorded_date": "2026-03-06",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 61.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 66,
+    "recorded_date": "2026-03-07",
+    "location": "New York",
+    "temperature": 15.0,
+    "humidity": 62.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 67,
+    "recorded_date": "2026-03-08",
+    "location": "New York",
+    "temperature": 16.0,
+    "humidity": 63.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 68,
+    "recorded_date": "2026-03-09",
+    "location": "New York",
+    "temperature": 17.0,
+    "humidity": 64.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 69,
+    "recorded_date": "2026-03-10",
+    "location": "New York",
+    "temperature": 13.0,
+    "humidity": 65.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 70,
+    "recorded_date": "2026-03-11",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 66.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 71,
+    "recorded_date": "2026-03-12",
+    "location": "New York",
+    "temperature": 15.0,
+    "humidity": 67.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 72,
+    "recorded_date": "2026-03-13",
+    "location": "New York",
+    "temperature": 16.0,
+    "humidity": 68.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 73,
+    "recorded_date": "2026-03-14",
+    "location": "New York",
+    "temperature": 17.0,
+    "humidity": 69.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 74,
+    "recorded_date": "2026-03-15",
+    "location": "New York",
+    "temperature": 13.0,
+    "humidity": 70.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 75,
+    "recorded_date": "2026-03-16",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 71.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 76,
+    "recorded_date": "2026-03-17",
+    "location": "New York",
+    "temperature": 15.0,
+    "humidity": 72.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 77,
+    "recorded_date": "2026-03-18",
+    "location": "New York",
+    "temperature": 16.0,
+    "humidity": 73.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 78,
+    "recorded_date": "2026-03-19",
+    "location": "New York",
+    "temperature": 17.0,
+    "humidity": 74.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 79,
+    "recorded_date": "2026-03-20",
+    "location": "New York",
+    "temperature": 13.0,
+    "humidity": 55.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 80,
+    "recorded_date": "2026-03-21",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 56.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 81,
+    "recorded_date": "2026-03-22",
+    "location": "New York",
+    "temperature": 15.0,
+    "humidity": 57.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 82,
+    "recorded_date": "2026-03-23",
+    "location": "New York",
+    "temperature": 16.0,
+    "humidity": 58.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 83,
+    "recorded_date": "2026-03-24",
+    "location": "New York",
+    "temperature": 17.0,
+    "humidity": 59.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 84,
+    "recorded_date": "2026-03-25",
+    "location": "New York",
+    "temperature": 13.0,
+    "humidity": 60.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 85,
+    "recorded_date": "2026-03-26",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 61.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 86,
+    "recorded_date": "2026-03-27",
+    "location": "New York",
+    "temperature": 15.0,
+    "humidity": 62.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 87,
+    "recorded_date": "2026-03-28",
+    "location": "New York",
+    "temperature": 16.0,
+    "humidity": 63.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 88,
+    "recorded_date": "2026-03-29",
+    "location": "New York",
+    "temperature": 17.0,
+    "humidity": 64.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 89,
+    "recorded_date": "2026-03-30",
+    "location": "New York",
+    "temperature": 13.0,
+    "humidity": 65.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 90,
+    "recorded_date": "2026-03-31",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 66.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 91,
+    "recorded_date": "2026-04-01",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 56.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 92,
+    "recorded_date": "2026-04-02",
+    "location": "New York",
+    "temperature": 15.0,
+    "humidity": 57.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 93,
+    "recorded_date": "2026-04-03",
+    "location": "New York",
+    "temperature": 16.0,
+    "humidity": 58.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 94,
+    "recorded_date": "2026-04-04",
+    "location": "New York",
+    "temperature": 17.0,
+    "humidity": 59.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 95,
+    "recorded_date": "2026-04-05",
+    "location": "New York",
+    "temperature": 13.0,
+    "humidity": 60.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 96,
+    "recorded_date": "2026-04-06",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 61.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 97,
+    "recorded_date": "2026-04-07",
+    "location": "New York",
+    "temperature": 15.0,
+    "humidity": 62.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 98,
+    "recorded_date": "2026-04-08",
+    "location": "New York",
+    "temperature": 16.0,
+    "humidity": 63.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 99,
+    "recorded_date": "2026-04-09",
+    "location": "New York",
+    "temperature": 17.0,
+    "humidity": 64.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 100,
+    "recorded_date": "2026-04-10",
+    "location": "New York",
+    "temperature": 13.0,
+    "humidity": 65.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 101,
+    "recorded_date": "2026-04-11",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 66.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 102,
+    "recorded_date": "2026-04-12",
+    "location": "New York",
+    "temperature": 15.0,
+    "humidity": 67.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 103,
+    "recorded_date": "2026-04-13",
+    "location": "New York",
+    "temperature": 16.0,
+    "humidity": 68.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 104,
+    "recorded_date": "2026-04-14",
+    "location": "New York",
+    "temperature": 17.0,
+    "humidity": 69.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 105,
+    "recorded_date": "2026-04-15",
+    "location": "New York",
+    "temperature": 13.0,
+    "humidity": 70.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 106,
+    "recorded_date": "2026-04-16",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 71.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 107,
+    "recorded_date": "2026-04-17",
+    "location": "New York",
+    "temperature": 15.0,
+    "humidity": 72.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 108,
+    "recorded_date": "2026-04-18",
+    "location": "New York",
+    "temperature": 16.0,
+    "humidity": 73.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 109,
+    "recorded_date": "2026-04-19",
+    "location": "New York",
+    "temperature": 17.0,
+    "humidity": 74.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 110,
+    "recorded_date": "2026-04-20",
+    "location": "New York",
+    "temperature": 13.0,
+    "humidity": 55.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 111,
+    "recorded_date": "2026-04-21",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 56.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 112,
+    "recorded_date": "2026-04-22",
+    "location": "New York",
+    "temperature": 15.0,
+    "humidity": 57.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 113,
+    "recorded_date": "2026-04-23",
+    "location": "New York",
+    "temperature": 16.0,
+    "humidity": 58.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 114,
+    "recorded_date": "2026-04-24",
+    "location": "New York",
+    "temperature": 17.0,
+    "humidity": 59.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 115,
+    "recorded_date": "2026-04-25",
+    "location": "New York",
+    "temperature": 13.0,
+    "humidity": 60.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 116,
+    "recorded_date": "2026-04-26",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 61.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 117,
+    "recorded_date": "2026-04-27",
+    "location": "New York",
+    "temperature": 15.0,
+    "humidity": 62.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 118,
+    "recorded_date": "2026-04-28",
+    "location": "New York",
+    "temperature": 16.0,
+    "humidity": 63.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 119,
+    "recorded_date": "2026-04-29",
+    "location": "New York",
+    "temperature": 17.0,
+    "humidity": 64.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 120,
+    "recorded_date": "2026-04-30",
+    "location": "New York",
+    "temperature": 13.0,
+    "humidity": 65.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 121,
+    "recorded_date": "2026-05-01",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 56.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 122,
+    "recorded_date": "2026-05-02",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 57.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 123,
+    "recorded_date": "2026-05-03",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 58.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 124,
+    "recorded_date": "2026-05-04",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 59.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 125,
+    "recorded_date": "2026-05-05",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 60.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 126,
+    "recorded_date": "2026-05-06",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 61.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 127,
+    "recorded_date": "2026-05-07",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 62.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 128,
+    "recorded_date": "2026-05-08",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 63.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 129,
+    "recorded_date": "2026-05-09",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 64.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 130,
+    "recorded_date": "2026-05-10",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 65.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 131,
+    "recorded_date": "2026-05-11",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 66.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 132,
+    "recorded_date": "2026-05-12",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 67.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 133,
+    "recorded_date": "2026-05-13",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 68.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 134,
+    "recorded_date": "2026-05-14",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 69.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 135,
+    "recorded_date": "2026-05-15",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 70.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 136,
+    "recorded_date": "2026-05-16",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 71.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 137,
+    "recorded_date": "2026-05-17",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 72.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 138,
+    "recorded_date": "2026-05-18",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 73.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 139,
+    "recorded_date": "2026-05-19",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 74.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 140,
+    "recorded_date": "2026-05-20",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 55.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 141,
+    "recorded_date": "2026-05-21",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 56.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 142,
+    "recorded_date": "2026-05-22",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 57.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 143,
+    "recorded_date": "2026-05-23",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 58.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 144,
+    "recorded_date": "2026-05-24",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 59.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 145,
+    "recorded_date": "2026-05-25",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 60.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 146,
+    "recorded_date": "2026-05-26",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 61.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 147,
+    "recorded_date": "2026-05-27",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 62.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 148,
+    "recorded_date": "2026-05-28",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 63.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 149,
+    "recorded_date": "2026-05-29",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 64.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 150,
+    "recorded_date": "2026-05-30",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 65.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 151,
+    "recorded_date": "2026-05-31",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 66.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 152,
+    "recorded_date": "2026-06-01",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 56.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 153,
+    "recorded_date": "2026-06-02",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 57.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 154,
+    "recorded_date": "2026-06-03",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 58.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 155,
+    "recorded_date": "2026-06-04",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 59.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 156,
+    "recorded_date": "2026-06-05",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 60.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 157,
+    "recorded_date": "2026-06-06",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 61.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 158,
+    "recorded_date": "2026-06-07",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 62.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 159,
+    "recorded_date": "2026-06-08",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 63.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 160,
+    "recorded_date": "2026-06-09",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 64.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 161,
+    "recorded_date": "2026-06-10",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 65.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 162,
+    "recorded_date": "2026-06-11",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 66.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 163,
+    "recorded_date": "2026-06-12",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 67.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 164,
+    "recorded_date": "2026-06-13",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 68.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 165,
+    "recorded_date": "2026-06-14",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 69.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 166,
+    "recorded_date": "2026-06-15",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 70.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 167,
+    "recorded_date": "2026-06-16",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 71.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 168,
+    "recorded_date": "2026-06-17",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 72.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 169,
+    "recorded_date": "2026-06-18",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 73.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 170,
+    "recorded_date": "2026-06-19",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 74.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 171,
+    "recorded_date": "2026-06-20",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 55.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 172,
+    "recorded_date": "2026-06-21",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 56.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 173,
+    "recorded_date": "2026-06-22",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 57.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 174,
+    "recorded_date": "2026-06-23",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 58.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 175,
+    "recorded_date": "2026-06-24",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 59.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 176,
+    "recorded_date": "2026-06-25",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 60.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 177,
+    "recorded_date": "2026-06-26",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 61.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 178,
+    "recorded_date": "2026-06-27",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 62.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 179,
+    "recorded_date": "2026-06-28",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 63.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 180,
+    "recorded_date": "2026-06-29",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 64.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 181,
+    "recorded_date": "2026-06-30",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 65.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 182,
+    "recorded_date": "2026-07-01",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 56.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 183,
+    "recorded_date": "2026-07-02",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 57.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 184,
+    "recorded_date": "2026-07-03",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 58.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 185,
+    "recorded_date": "2026-07-04",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 59.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 186,
+    "recorded_date": "2026-07-05",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 60.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 187,
+    "recorded_date": "2026-07-06",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 61.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 188,
+    "recorded_date": "2026-07-07",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 62.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 189,
+    "recorded_date": "2026-07-08",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 63.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 190,
+    "recorded_date": "2026-07-09",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 64.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 191,
+    "recorded_date": "2026-07-10",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 65.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 192,
+    "recorded_date": "2026-07-11",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 66.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 193,
+    "recorded_date": "2026-07-12",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 67.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 194,
+    "recorded_date": "2026-07-13",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 68.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 195,
+    "recorded_date": "2026-07-14",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 69.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 196,
+    "recorded_date": "2026-07-15",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 70.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 197,
+    "recorded_date": "2026-07-16",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 71.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 198,
+    "recorded_date": "2026-07-17",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 72.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 199,
+    "recorded_date": "2026-07-18",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 73.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 200,
+    "recorded_date": "2026-07-19",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 74.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 201,
+    "recorded_date": "2026-07-20",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 55.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 202,
+    "recorded_date": "2026-07-21",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 56.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 203,
+    "recorded_date": "2026-07-22",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 57.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 204,
+    "recorded_date": "2026-07-23",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 58.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 205,
+    "recorded_date": "2026-07-24",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 59.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 206,
+    "recorded_date": "2026-07-25",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 60.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 207,
+    "recorded_date": "2026-07-26",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 61.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 208,
+    "recorded_date": "2026-07-27",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 62.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 209,
+    "recorded_date": "2026-07-28",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 63.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 210,
+    "recorded_date": "2026-07-29",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 64.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 211,
+    "recorded_date": "2026-07-30",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 65.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 212,
+    "recorded_date": "2026-07-31",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 66.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 213,
+    "recorded_date": "2026-08-01",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 56.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 214,
+    "recorded_date": "2026-08-02",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 57.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 215,
+    "recorded_date": "2026-08-03",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 58.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 216,
+    "recorded_date": "2026-08-04",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 59.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 217,
+    "recorded_date": "2026-08-05",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 60.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 218,
+    "recorded_date": "2026-08-06",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 61.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 219,
+    "recorded_date": "2026-08-07",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 62.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 220,
+    "recorded_date": "2026-08-08",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 63.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 221,
+    "recorded_date": "2026-08-09",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 64.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 222,
+    "recorded_date": "2026-08-10",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 65.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 223,
+    "recorded_date": "2026-08-11",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 66.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 224,
+    "recorded_date": "2026-08-12",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 67.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 225,
+    "recorded_date": "2026-08-13",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 68.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 226,
+    "recorded_date": "2026-08-14",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 69.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 227,
+    "recorded_date": "2026-08-15",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 70.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 228,
+    "recorded_date": "2026-08-16",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 71.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 229,
+    "recorded_date": "2026-08-17",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 72.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 230,
+    "recorded_date": "2026-08-18",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 73.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 231,
+    "recorded_date": "2026-08-19",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 74.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 232,
+    "recorded_date": "2026-08-20",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 55.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 233,
+    "recorded_date": "2026-08-21",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 56.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 234,
+    "recorded_date": "2026-08-22",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 57.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 235,
+    "recorded_date": "2026-08-23",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 58.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 236,
+    "recorded_date": "2026-08-24",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 59.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 237,
+    "recorded_date": "2026-08-25",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 60.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 238,
+    "recorded_date": "2026-08-26",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 61.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 239,
+    "recorded_date": "2026-08-27",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 62.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 240,
+    "recorded_date": "2026-08-28",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 63.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 241,
+    "recorded_date": "2026-08-29",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 64.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 242,
+    "recorded_date": "2026-08-30",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 65.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 243,
+    "recorded_date": "2026-08-31",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 66.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 244,
+    "recorded_date": "2026-09-01",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 56.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 245,
+    "recorded_date": "2026-09-02",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 57.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 246,
+    "recorded_date": "2026-09-03",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 58.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 247,
+    "recorded_date": "2026-09-04",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 59.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 248,
+    "recorded_date": "2026-09-05",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 60.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 249,
+    "recorded_date": "2026-09-06",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 61.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 250,
+    "recorded_date": "2026-09-07",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 62.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 251,
+    "recorded_date": "2026-09-08",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 63.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 252,
+    "recorded_date": "2026-09-09",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 64.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 253,
+    "recorded_date": "2026-09-10",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 65.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 254,
+    "recorded_date": "2026-09-11",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 66.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 255,
+    "recorded_date": "2026-09-12",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 67.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 256,
+    "recorded_date": "2026-09-13",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 68.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 257,
+    "recorded_date": "2026-09-14",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 69.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 258,
+    "recorded_date": "2026-09-15",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 70.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 259,
+    "recorded_date": "2026-09-16",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 71.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 260,
+    "recorded_date": "2026-09-17",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 72.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 261,
+    "recorded_date": "2026-09-18",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 73.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 262,
+    "recorded_date": "2026-09-19",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 74.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 263,
+    "recorded_date": "2026-09-20",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 55.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 264,
+    "recorded_date": "2026-09-21",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 56.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 265,
+    "recorded_date": "2026-09-22",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 57.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 266,
+    "recorded_date": "2026-09-23",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 58.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 267,
+    "recorded_date": "2026-09-24",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 59.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 268,
+    "recorded_date": "2026-09-25",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 60.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 269,
+    "recorded_date": "2026-09-26",
+    "location": "New York",
+    "temperature": 25.0,
+    "humidity": 61.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 270,
+    "recorded_date": "2026-09-27",
+    "location": "New York",
+    "temperature": 26.0,
+    "humidity": 62.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 271,
+    "recorded_date": "2026-09-28",
+    "location": "New York",
+    "temperature": 27.0,
+    "humidity": 63.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 272,
+    "recorded_date": "2026-09-29",
+    "location": "New York",
+    "temperature": 28.0,
+    "humidity": 64.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 273,
+    "recorded_date": "2026-09-30",
+    "location": "New York",
+    "temperature": 24.0,
+    "humidity": 65.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 274,
+    "recorded_date": "2026-10-01",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 56.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 275,
+    "recorded_date": "2026-10-02",
+    "location": "New York",
+    "temperature": 15.0,
+    "humidity": 57.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 276,
+    "recorded_date": "2026-10-03",
+    "location": "New York",
+    "temperature": 16.0,
+    "humidity": 58.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 277,
+    "recorded_date": "2026-10-04",
+    "location": "New York",
+    "temperature": 17.0,
+    "humidity": 59.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 278,
+    "recorded_date": "2026-10-05",
+    "location": "New York",
+    "temperature": 13.0,
+    "humidity": 60.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 279,
+    "recorded_date": "2026-10-06",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 61.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 280,
+    "recorded_date": "2026-10-07",
+    "location": "New York",
+    "temperature": 15.0,
+    "humidity": 62.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 281,
+    "recorded_date": "2026-10-08",
+    "location": "New York",
+    "temperature": 16.0,
+    "humidity": 63.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 282,
+    "recorded_date": "2026-10-09",
+    "location": "New York",
+    "temperature": 17.0,
+    "humidity": 64.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 283,
+    "recorded_date": "2026-10-10",
+    "location": "New York",
+    "temperature": 13.0,
+    "humidity": 65.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 284,
+    "recorded_date": "2026-10-11",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 66.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 285,
+    "recorded_date": "2026-10-12",
+    "location": "New York",
+    "temperature": 15.0,
+    "humidity": 67.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 286,
+    "recorded_date": "2026-10-13",
+    "location": "New York",
+    "temperature": 16.0,
+    "humidity": 68.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 287,
+    "recorded_date": "2026-10-14",
+    "location": "New York",
+    "temperature": 17.0,
+    "humidity": 69.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 288,
+    "recorded_date": "2026-10-15",
+    "location": "New York",
+    "temperature": 13.0,
+    "humidity": 70.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 289,
+    "recorded_date": "2026-10-16",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 71.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 290,
+    "recorded_date": "2026-10-17",
+    "location": "New York",
+    "temperature": 15.0,
+    "humidity": 72.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 291,
+    "recorded_date": "2026-10-18",
+    "location": "New York",
+    "temperature": 16.0,
+    "humidity": 73.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 292,
+    "recorded_date": "2026-10-19",
+    "location": "New York",
+    "temperature": 17.0,
+    "humidity": 74.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 293,
+    "recorded_date": "2026-10-20",
+    "location": "New York",
+    "temperature": 13.0,
+    "humidity": 55.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 294,
+    "recorded_date": "2026-10-21",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 56.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 295,
+    "recorded_date": "2026-10-22",
+    "location": "New York",
+    "temperature": 15.0,
+    "humidity": 57.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 296,
+    "recorded_date": "2026-10-23",
+    "location": "New York",
+    "temperature": 16.0,
+    "humidity": 58.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 297,
+    "recorded_date": "2026-10-24",
+    "location": "New York",
+    "temperature": 17.0,
+    "humidity": 59.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 298,
+    "recorded_date": "2026-10-25",
+    "location": "New York",
+    "temperature": 13.0,
+    "humidity": 60.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 299,
+    "recorded_date": "2026-10-26",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 61.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 300,
+    "recorded_date": "2026-10-27",
+    "location": "New York",
+    "temperature": 15.0,
+    "humidity": 62.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 301,
+    "recorded_date": "2026-10-28",
+    "location": "New York",
+    "temperature": 16.0,
+    "humidity": 63.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 302,
+    "recorded_date": "2026-10-29",
+    "location": "New York",
+    "temperature": 17.0,
+    "humidity": 64.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 303,
+    "recorded_date": "2026-10-30",
+    "location": "New York",
+    "temperature": 13.0,
+    "humidity": 65.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 304,
+    "recorded_date": "2026-10-31",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 66.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 305,
+    "recorded_date": "2026-11-01",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 56.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 306,
+    "recorded_date": "2026-11-02",
+    "location": "New York",
+    "temperature": 15.0,
+    "humidity": 57.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 307,
+    "recorded_date": "2026-11-03",
+    "location": "New York",
+    "temperature": 16.0,
+    "humidity": 58.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 308,
+    "recorded_date": "2026-11-04",
+    "location": "New York",
+    "temperature": 17.0,
+    "humidity": 59.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 309,
+    "recorded_date": "2026-11-05",
+    "location": "New York",
+    "temperature": 13.0,
+    "humidity": 60.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 310,
+    "recorded_date": "2026-11-06",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 61.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 311,
+    "recorded_date": "2026-11-07",
+    "location": "New York",
+    "temperature": 15.0,
+    "humidity": 62.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 312,
+    "recorded_date": "2026-11-08",
+    "location": "New York",
+    "temperature": 16.0,
+    "humidity": 63.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 313,
+    "recorded_date": "2026-11-09",
+    "location": "New York",
+    "temperature": 17.0,
+    "humidity": 64.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 314,
+    "recorded_date": "2026-11-10",
+    "location": "New York",
+    "temperature": 13.0,
+    "humidity": 65.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 315,
+    "recorded_date": "2026-11-11",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 66.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 316,
+    "recorded_date": "2026-11-12",
+    "location": "New York",
+    "temperature": 15.0,
+    "humidity": 67.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 317,
+    "recorded_date": "2026-11-13",
+    "location": "New York",
+    "temperature": 16.0,
+    "humidity": 68.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 318,
+    "recorded_date": "2026-11-14",
+    "location": "New York",
+    "temperature": 17.0,
+    "humidity": 69.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 319,
+    "recorded_date": "2026-11-15",
+    "location": "New York",
+    "temperature": 13.0,
+    "humidity": 70.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 320,
+    "recorded_date": "2026-11-16",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 71.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 321,
+    "recorded_date": "2026-11-17",
+    "location": "New York",
+    "temperature": 15.0,
+    "humidity": 72.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 322,
+    "recorded_date": "2026-11-18",
+    "location": "New York",
+    "temperature": 16.0,
+    "humidity": 73.0,
+    "rainfall": 0.0,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "record_id": 323,
+    "recorded_date": "2026-11-19",
+    "location": "New York",
+    "temperature": 17.0,
+    "humidity": 74.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 324,
+    "recorded_date": "2026-11-20",
+    "location": "New York",
+    "temperature": 13.0,
+    "humidity": 55.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  },
+  {
+    "record_id": 325,
+    "recorded_date": "2026-11-21",
+    "location": "New York",
+    "temperature": 14.0,
+    "humidity": 56.0,
+    "rainfall": 4.5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "record_id": 326,
+    "recorded_date": "2026-11-22",
+    "location": "New York",
+    "temperature": 15.0,
+    "humidity": 57.0,
+    "rainfall": 0.0,
+    "weather_condition": "Sunny"
+  }
+]

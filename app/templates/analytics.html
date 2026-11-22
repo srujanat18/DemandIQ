@@ -1,0 +1,174 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h3 class="fw-bold mb-1">SQL Analytics & Analytical Views</h3>
+        <p class="text-secondary small mb-0">High-performance analytical datasets generated from the Star Schema data warehouse</p>
+    </div>
+</div>
+
+<!-- Tabs Navigation -->
+<ul class="nav nav-pills mb-4 gap-2 bg-white p-2 rounded-3 shadow-sm border" id="analyticsTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="monthly-tab" data-bs-toggle="tab" data-bs-target="#monthly-view" type="button" role="tab">
+            <i class="bi bi-calendar3 me-1"></i> Monthly Summary (<code>v_monthly_sales_summary</code>)
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="category-tab" data-bs-toggle="tab" data-bs-target="#category-view" type="button" role="tab">
+            <i class="bi bi-grid-fill me-1"></i> Category Breakdown (<code>v_category_sales</code>)
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="region-tab" data-bs-toggle="tab" data-bs-target="#region-view" type="button" role="tab">
+            <i class="bi bi-geo-alt-fill me-1"></i> Regional Distribution (<code>v_region_sales</code>)
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="daily-tab" data-bs-toggle="tab" data-bs-target="#daily-view" type="button" role="tab">
+            <i class="bi bi-cloud-sun me-1"></i> Daily & Weather Correlation (<code>v_daily_sales_summary</code>)
+        </button>
+    </li>
+</ul>
+
+<div class="tab-content" id="analyticsTabContent">
+    <!-- Tab 1: Monthly Summary -->
+    <div class="tab-pane fade show active" id="monthly-view" role="tabpanel">
+        <div class="card border-0 shadow-sm rounded-3">
+            <div class="card-header bg-white border-0 py-3 d-flex justify-content-between align-items-center">
+                <h5 class="fw-bold mb-0">Monthly Sales Aggregate View</h5>
+                <span class="badge bg-light text-secondary border">SQL View: <code>v_monthly_sales_summary</code></span>
+            </div>
+            <div class="table-responsive p-3 pt-0">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Sales Month</th>
+                            <th class="text-center">Total Orders</th>
+                            <th class="text-center">Units Sold</th>
+                            <th class="text-end">Total Revenue</th>
+                            <th class="text-end">Rev / Customer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in monthly %}
+                        <tr>
+                            <td class="fw-semibold text-dark">{{ row.sales_month }}</td>
+                            <td class="text-center">{{ "{:,}".format(row.total_orders) }}</td>
+                            <td class="text-center">{{ "{:,}".format(row.total_units_sold) }}</td>
+                            <td class="text-end fw-bold text-success">${{ "{:,.2f}".format(row.total_revenue) }}</td>
+                            <td class="text-end text-primary">${{ "{:,.2f}".format(row.revenue_per_customer) }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tab 2: Category Breakdown -->
+    <div class="tab-pane fade" id="category-view" role="tabpanel">
+        <div class="card border-0 shadow-sm rounded-3">
+            <div class="card-header bg-white border-0 py-3 d-flex justify-content-between align-items-center">
+                <h5 class="fw-bold mb-0">Category Performance View</h5>
+                <span class="badge bg-light text-secondary border">SQL View: <code>v_category_sales</code></span>
+            </div>
+            <div class="table-responsive p-3 pt-0">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Category Name</th>
+                            <th class="text-center">Total Active Products</th>
+                            <th class="text-center">Units Sold</th>
+                            <th class="text-end">Gross Revenue</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in categories %}
+                        <tr>
+                            <td class="fw-semibold text-dark">{{ row.category_name }}</td>
+                            <td class="text-center">{{ row.total_products }}</td>
+                            <td class="text-center">{{ "{:,}".format(row.units_sold) }}</td>
+                            <td class="text-end fw-bold text-success">${{ "{:,.2f}".format(row.total_revenue) }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tab 3: Regional Distribution -->
+    <div class="tab-pane fade" id="region-view" role="tabpanel">
+        <div class="card border-0 shadow-sm rounded-3">
+            <div class="card-header bg-white border-0 py-3 d-flex justify-content-between align-items-center">
+                <h5 class="fw-bold mb-0">Regional Customer & Revenue Distribution</h5>
+                <span class="badge bg-light text-secondary border">SQL View: <code>v_region_sales</code></span>
+            </div>
+            <div class="table-responsive p-3 pt-0">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Region / City</th>
+                            <th class="text-center">Customer Base</th>
+                            <th class="text-center">Total Orders</th>
+                            <th class="text-end">Gross Revenue</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in regions %}
+                        <tr>
+                            <td class="fw-semibold text-dark"><i class="bi bi-geo-alt text-danger me-1"></i> {{ row.region }}</td>
+                            <td class="text-center">{{ row.total_customers }}</td>
+                            <td class="text-center">{{ "{:,}".format(row.total_orders) }}</td>
+                            <td class="text-end fw-bold text-success">${{ "{:,.2f}".format(row.total_revenue) }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tab 4: Daily Sales & Weather Correlation -->
+    <div class="tab-pane fade" id="daily-view" role="tabpanel">
+        <div class="card border-0 shadow-sm rounded-3">
+            <div class="card-header bg-white border-0 py-3 d-flex justify-content-between align-items-center">
+                <h5 class="fw-bold mb-0">Daily Sales & Weather Multi-Source Join</h5>
+                <span class="badge bg-light text-secondary border">SQL View: <code>v_daily_sales_summary</code></span>
+            </div>
+            <div class="table-responsive p-3 pt-0">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Date</th>
+                            <th class="text-center">Orders</th>
+                            <th class="text-center">Units Sold</th>
+                            <th class="text-end">Total Revenue</th>
+                            <th class="text-end">Avg Order Value</th>
+                            <th class="text-center">Avg Temp (°C)</th>
+                            <th class="text-center">Weather Condition</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in daily %}
+                        <tr>
+                            <td class="fw-semibold">{{ row.transaction_date }}</td>
+                            <td class="text-center">{{ row.total_orders }}</td>
+                            <td class="text-center">{{ row.total_units_sold }}</td>
+                            <td class="text-end fw-bold">${{ "{:,.2f}".format(row.total_revenue) }}</td>
+                            <td class="text-end">${{ "{:,.2f}".format(row.avg_order_value) }}</td>
+                            <td class="text-center">{{ row.avg_temperature }}°C</td>
+                            <td class="text-center">
+                                <span class="badge bg-light text-secondary border">{{ row.weather_condition }}</span>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

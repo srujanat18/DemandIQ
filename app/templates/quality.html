@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h3 class="fw-bold mb-1">Data Quality & Cleansing Audit Engine</h3>
+        <p class="text-secondary small mb-0">Automated profiling, anomaly rejection, and data integrity metrics generated per ETL run</p>
+    </div>
+    <div>
+        <span class="badge bg-light text-secondary border p-2">
+            Audit Timestamp: <strong>{{ dq_report.timestamp }}</strong>
+        </span>
+    </div>
+</div>
+
+<!-- DQ Summary KPI Cards -->
+<div class="row g-3 mb-4">
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm rounded-3 h-100 border-start border-primary border-4">
+            <div class="card-body">
+                <div class="text-secondary small fw-medium">INCOMING RAW RECORDS</div>
+                <h3 class="fw-bold my-1 text-dark">{{ "{:,}".format(dq_report.total_incoming) }}</h3>
+                <div class="text-muted small">From multi-source extracts</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm rounded-3 h-100 border-start border-success border-4">
+            <div class="card-body">
+                <div class="text-secondary small fw-medium">VALID LOADED RECORDS</div>
+                <h3 class="fw-bold my-1 text-success">{{ "{:,}".format(dq_report.final_valid_records) }}</h3>
+                <div class="text-success small"><i class="bi bi-shield-check"></i> Passed all DQ gates</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm rounded-3 h-100 border-start border-danger border-4">
+            <div class="card-body">
+                <div class="text-secondary small fw-medium">ANOMALIES REJECTED</div>
+                <h3 class="fw-bold my-1 text-danger">
+                    {{ dq_report.duplicates_removed + dq_report.negative_quantities_rejected + dq_report.invalid_prices_rejected + dq_report.foreign_key_violations_rejected }}
+                </h3>
+                <div class="text-danger small"><i class="bi bi-x-circle"></i> Cleaned & quarantined</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm rounded-3 h-100 border-start border-warning border-4">
+            <div class="card-body">
+                <div class="text-secondary small fw-medium">DATA ACCEPTANCE RATE</div>
+                <h3 class="fw-bold my-1 text-warning">{{ dq_report.acceptance_rate_pct }}%</h3>
+                <div class="text-muted small">Quality threshold passed (&gt;95%)</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Detailed Data Quality Audit Breakdown -->
+<div class="row g-3 mb-4">
+    <div class="col-lg-6">
+        <div class="card border-0 shadow-sm rounded-3 h-100">
+            <div class="card-header bg-white border-0 py-3">
+                <h5 class="fw-bold mb-0"><i class="bi bi-check2-circle text-success me-2"></i>Automated Data Quality Audit Report</h5>
+            </div>
+            <div class="table-responsive p-3 pt-0">
+                <table class="table table-bordered align-middle mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Validation Rule Check</th>
+                            <th>Target Column / Entity</th>
+                            <th class="text-center">Action Taken</th>
+                            <th class="text-end">Records Impacted</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-semibold">Duplicate Check</td>
+                            <td><code>sale_id</code></td>
+                            <td class="text-center"><span class="badge bg-danger-subtle text-danger">Deduplicated</span></td>
+                            <td class="text-end fw-bold">{{ dq_report.duplicates_removed }} removed</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">Negative Sales Quantity</td>
+                            <td><code>quantity &le; 0</code></td>
+                            <td class="text-center"><span class="badge bg-danger-subtle text-danger">Rejected</span></td>
+                            <td class="text-end fw-bold">{{ dq_report.negative_quantities_rejected }} rejected</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">Invalid / Negative Price</td>
+                            <td><code>unit_price &le; 0</code></td>
+                            <td class="text-center"><span class="badge bg-danger-subtle text-danger">Rejected</span></td>
+                            <td class="text-end fw-bold">{{ dq_report.invalid_prices_rejected }} rejected</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">Referential Integrity (FK)</td>
+                            <td><code>product_id, customer_id</code></td>
+                            <td class="text-center"><span class="badge bg-danger-subtle text-danger">Rejected</span></td>
+                            <td class="text-end fw-bold">{{ dq_report.foreign_key_violations_rejected }} rejected</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">Null Payment / Channel</td>
+                            <td><code>payment_method, channel</code></td>
+                            <td class="text-center"><span class="badge bg-info-subtle text-info">Default Imputed</span></td>
+                            <td class="text-end fw-bold">{{ dq_report.nulls_handled }} imputed</td>
+                        </tr>
+                        <tr class="table-success fw-bold">
+                            <td colspan="3">Final Clean Records Loaded to MySQL / Warehouse</td>
+                            <td class="text-end">{{ "{:,}".format(dq_report.final_valid_records) }} valid</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data Quality Governance Best Practices -->
+    <div class="col-lg-6">
+        <div class="card border-0 shadow-sm rounded-3 h-100">
+            <div class="card-header bg-white border-0 py-3">
+                <h5 class="fw-bold mb-0"><i class="bi bi-journal-code text-primary me-2"></i>Data Engineering Governance Rules</h5>
+            </div>
+            <div class="card-body p-3 pt-0">
+                <div class="accordion" id="dqRulesAccordion">
+                    <div class="accordion-item border-0 mb-2 rounded bg-light">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-light fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#rule1">
+                                1. Deduplication Gate (Idempotent Pipeline)
+                            </button>
+                        </h2>
+                        <div id="rule1" class="accordion-collapse collapse" data-bs-parent="#dqRulesAccordion">
+                            <div class="accordion-body small text-secondary">
+                                Uses primary natural/surrogate key subset hashing on <code>sale_id</code>. Keeps first encountered record to prevent double-counting revenue in analytical views.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 mb-2 rounded bg-light">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-light fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#rule2">
+                                2. Domain Constraint Validation
+                            </button>
+                        </h2>
+                        <div id="rule2" class="accordion-collapse collapse" data-bs-parent="#dqRulesAccordion">
+                            <div class="accordion-body small text-secondary">
+                                Rejects non-positive quantities (e.g. returns/system test data) and prices &le; 0. Returns are redirected to refunds/returns workflows rather than polluting net sales volume.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 mb-2 rounded bg-light">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-light fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#rule3">
+                                3. Referential Integrity Check
+                            </button>
+                        </h2>
+                        <div id="rule3" class="accordion-collapse collapse" data-bs-parent="#dqRulesAccordion">
+                            <div class="accordion-body small text-secondary">
+                                Verifies that all <code>product_id</code> and <code>customer_id</code> foreign keys exist in active master dimensions prior to warehouse load, preventing orphaned facts.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 rounded bg-light">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-light fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#rule4">
+                                4. ISO Date Standardization
+                            </button>
+                        </h2>
+                        <div id="rule4" class="accordion-collapse collapse" data-bs-parent="#dqRulesAccordion">
+                            <div class="accordion-body small text-secondary">
+                                Parses dates with strict format validation (<code>YYYY-MM-DD</code>) and coerces corrupted timestamps into quarantine logs.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

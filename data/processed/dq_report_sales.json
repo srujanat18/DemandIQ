@@ -1,0 +1,15 @@
+{
+  "dataset_name": "sales",
+  "timestamp": "2026-11-22 05:53:45",
+  "total_incoming": 1,
+  "duplicates_removed": 0,
+  "nulls_handled": 1,
+  "negative_quantities_rejected": 0,
+  "invalid_prices_rejected": 0,
+  "invalid_dates_rejected": 0,
+  "foreign_key_violations_rejected": 0,
+  "final_valid_records": 1,
+  "acceptance_rate_pct": 100.0,
+  "validation_passed": true,
+  "warnings": []
+}
