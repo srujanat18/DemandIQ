@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}DemandIQ - Smart Demand Intelligence & Data Engineering Platform{% endblock %}</title>
+    <title>{% block title %}DemandIQ - Smart Manufacturing & Demand Intelligence{% endblock %}</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
@@ -18,53 +18,70 @@
 
 <div class="container-fluid p-0 d-flex min-vh-100">
     <!-- Sidebar -->
-    <aside class="sidebar bg-dark text-white p-3 d-flex flex-column" style="width: 260px; min-height: 100vh;">
-        <div class="sidebar-brand d-flex align-items-center mb-4 px-2">
-            <i class="bi bi-cpu-fill text-primary fs-3 me-2"></i>
+    <aside class="sidebar bg-dark text-white p-3 d-flex flex-column shadow" style="width: 270px; min-height: 100vh;">
+        <!-- Brand Header -->
+        <div class="sidebar-brand d-flex align-items-center mb-4 px-2 py-1">
+            <div class="bg-primary text-white rounded-3 p-2 me-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 42px; height: 42px;">
+                <i class="bi bi-box-seam-fill fs-4"></i>
+            </div>
             <div>
                 <span class="fs-5 fw-bold text-white tracking-wide">Demand<span class="text-primary">IQ</span></span>
-                <div class="text-secondary small" style="font-size: 0.72rem;">DATA ENGINEERING PLATFORM</div>
+                <div class="text-secondary small fw-medium" style="font-size: 0.72rem; letter-spacing: 0.05em;">MANUFACTURING INTELLIGENCE</div>
             </div>
         </div>
 
+        <!-- Role Mode Switcher -->
+        <div class="bg-dark-subtle p-2 rounded-3 mb-3 border border-secondary border-opacity-25">
+            <div class="small text-secondary fw-semibold mb-1" style="font-size: 0.72rem;">ACTIVE PERSPECTIVE</div>
+            <div class="btn-group w-100" role="group">
+                <button type="button" class="btn btn-sm btn-primary py-1 px-2 text-nowrap fw-medium" id="btnModeManufacturer" onclick="setPerspective('manufacturer')">
+                    <i class="bi bi-buildings me-1"></i> Factory Mode
+                </button>
+                <button type="button" class="btn btn-sm btn-outline-secondary py-1 px-2 text-nowrap text-light" id="btnModeEngineer" onclick="setPerspective('engineer')">
+                    <i class="bi bi-code-slash me-1"></i> Data Eng
+                </button>
+            </div>
+        </div>
+
+        <!-- Navigation Menu -->
         <ul class="nav nav-pills flex-column mb-auto gap-1">
             <li class="nav-item">
                 <a href="{{ url_for('main.index') }}" class="nav-link text-white {% if page == 'overview' %}active bg-primary{% endif %}">
-                    <i class="bi bi-grid-1x2-fill me-2"></i> Overview Dashboard
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="{{ url_for('main.pipelines_page') }}" class="nav-link text-white {% if page == 'pipelines' %}active bg-primary{% endif %}">
-                    <i class="bi bi-diagram-3-fill me-2"></i> Pipelines & Logs
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="{{ url_for('main.analytics_page') }}" class="nav-link text-white {% if page == 'analytics' %}active bg-primary{% endif %}">
-                    <i class="bi bi-bar-chart-line-fill me-2"></i> SQL Analytics & Views
+                    <i class="bi bi-speedometer2 me-2"></i> Production Hub
                 </a>
             </li>
             <li class="nav-item">
                 <a href="{{ url_for('main.forecasting_page') }}" class="nav-link text-white {% if page == 'forecasting' %}active bg-primary{% endif %}">
-                    <i class="bi bi-graph-up-arrow me-2"></i> Demand Forecasting
+                    <i class="bi bi-graph-up-arrow me-2"></i> Demand & Inventory
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ url_for('main.analytics_page') }}" class="nav-link text-white {% if page == 'analytics' %}active bg-primary{% endif %}">
+                    <i class="bi bi-pie-chart-fill me-2"></i> Sales & Market Trends
                 </a>
             </li>
             <li class="nav-item">
                 <a href="{{ url_for('main.quality_page') }}" class="nav-link text-white {% if page == 'quality' %}active bg-primary{% endif %}">
-                    <i class="bi bi-shield-check me-2"></i> Data Quality Engine
+                    <i class="bi bi-shield-check me-2"></i> Data Health & Cleaning
+                </a>
+            </li>
+            <li class="nav-item eng-only-nav">
+                <a href="{{ url_for('main.pipelines_page') }}" class="nav-link text-white {% if page == 'pipelines' %}active bg-primary{% endif %}">
+                    <i class="bi bi-diagram-3-fill me-2"></i> Pipelines & Airflow
                 </a>
             </li>
         </ul>
 
-        <hr class="text-secondary my-3">
+        <hr class="text-secondary opacity-25 my-3">
         
-        <!-- Architecture Info in Sidebar -->
-        <div class="sidebar-footer p-2 bg-dark-subtle rounded small text-secondary">
-            <div class="fw-semibold text-light mb-1"><i class="bi bi-layers-half text-primary"></i> Architecture</div>
-            <div style="font-size: 0.75rem;">
-                <span class="badge bg-secondary">CSV + API</span> &rarr;
-                <span class="badge bg-secondary">Staging</span> &rarr;
-                <span class="badge bg-info text-dark">Data Quality</span> &rarr;
-                <span class="badge bg-success">Star Schema</span>
+        <!-- Live Status Pill in Sidebar -->
+        <div class="p-2 bg-dark-subtle rounded-3 small text-secondary border border-secondary border-opacity-25">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+                <span class="text-light fw-semibold" style="font-size: 0.75rem;">System Health</span>
+                <span class="badge bg-success-subtle text-success border border-success-subtle" style="font-size: 0.68rem;">Ready</span>
+            </div>
+            <div class="text-muted" style="font-size: 0.72rem;">
+                Automated cleaning active &bull; High-watermark CDC enabled
             </div>
         </div>
     </aside>
@@ -74,22 +91,25 @@
         <!-- Top Navbar -->
         <header class="navbar navbar-expand-lg bg-white border-bottom px-4 py-2 sticky-top shadow-sm">
             <div class="container-fluid p-0 d-flex justify-content-between align-items-center">
-                <div class="d-flex align-items-center gap-3">
-                    <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill">
-                        <i class="bi bi-check-circle-fill me-1"></i> Engine Status: Online
+                <div class="d-flex align-items-center gap-2">
+                    <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill fw-semibold">
+                        <i class="bi bi-lightning-charge-fill me-1"></i> DemandIQ Live Engine
                     </span>
-                    <span class="text-secondary small d-none d-md-inline">
-                        <i class="bi bi-database me-1"></i> Storage: MySQL / SQLite Hybrid
-                    </span>
+                    <button class="btn btn-outline-secondary btn-sm rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#uploadModal">
+                        <i class="bi bi-cloud-arrow-up-fill me-1 text-primary"></i> Upload Sales CSV
+                    </button>
                 </div>
 
-                <!-- Pipeline Action Buttons -->
+                <!-- Action Buttons -->
                 <div class="d-flex align-items-center gap-2">
-                    <button class="btn btn-outline-primary btn-sm px-3" id="btnRunIncremental" onclick="triggerIncrementalPipeline()">
-                        <i class="bi bi-arrow-repeat me-1"></i> Run Incremental Load
+                    <a href="/api/export/production-schedule" class="btn btn-success btn-sm px-3 shadow-sm rounded-pill fw-medium" title="Download printable manufacturing action plan">
+                        <i class="bi bi-download me-1"></i> Download Production Plan
+                    </a>
+                    <button class="btn btn-outline-primary btn-sm px-3 rounded-pill" id="btnRefreshPipeline" onclick="triggerIncrementalPipeline()">
+                        <i class="bi bi-arrow-repeat me-1"></i> Sync Latest Data
                     </button>
-                    <button class="btn btn-primary btn-sm px-3" id="btnRunFull" onclick="triggerFullPipeline()">
-                        <i class="bi bi-play-circle-fill me-1"></i> Run Master ETL
+                    <button class="btn btn-primary btn-sm px-3 rounded-pill eng-only-btn" id="btnRunFull" onclick="triggerFullPipeline()">
+                        <i class="bi bi-play-circle-fill me-1"></i> Rebuild Warehouse
                     </button>
                 </div>
             </div>
@@ -105,9 +125,44 @@
 
         <!-- Footer -->
         <footer class="bg-white border-top text-center py-2 text-secondary small">
-            DemandIQ &copy; 2026 &bull; Data Engineering Portfolio Project &bull; Built with Python, SQL, Pandas, Flask & Star Schema
+            DemandIQ &copy; 2026 &bull; Designed for Factory Production Planners, Supply Chain Managers & Data Engineers
         </footer>
     </main>
+</div>
+
+<!-- Upload CSV Modal -->
+<div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg rounded-4">
+            <div class="modal-header border-bottom-0 pb-0">
+                <h5 class="modal-title fw-bold" id="uploadModalLabel">
+                    <i class="bi bi-cloud-arrow-up-fill text-primary me-2"></i>Upload Sales Data CSV
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-secondary small mb-3">
+                    Upload any raw sales CSV file. DemandIQ will <strong>automatically remove duplicates</strong>, 
+                    <strong>clean corrupted prices</strong>, update stock forecasts, and refresh the schedule in seconds.
+                </p>
+
+                <div class="border border-2 border-dashed rounded-3 p-4 text-center bg-light mb-3" id="dropZone" style="cursor: pointer;">
+                    <i class="bi bi-file-earmark-spreadsheet-fill fs-1 text-primary mb-2 d-block"></i>
+                    <span class="fw-semibold text-dark d-block mb-1">Click to browse or drag & drop CSV file</span>
+                    <span class="text-muted small">Required columns: sale_id, transaction_date, product_id, quantity, unit_price</span>
+                    <input type="file" id="fileInput" accept=".csv" class="d-none">
+                </div>
+
+                <div id="uploadFeedback" class="small"></div>
+            </div>
+            <div class="modal-footer border-top-0 pt-0">
+                <button type="button" class="btn btn-light rounded-pill px-3" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary rounded-pill px-4" id="btnUploadSubmit" onclick="submitFileUpload()">
+                    <i class="bi bi-check2-circle me-1"></i> Clean & Ingest Data
+                </button>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- Bootstrap 5 JS -->

@@ -1,98 +1,107 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="d-flex justify-content-between align-items-center mb-4">
+<div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-2">
     <div>
-        <h3 class="fw-bold mb-1">Demand Forecasting & Inventory Intelligence</h3>
-        <p class="text-secondary small mb-0">Statistical demand projections (EWMA + Seasonality) and inventory stockout risk monitoring</p>
+        <h3 class="fw-bold mb-1 text-dark">Demand Forecasting & Production Planning</h3>
+        <p class="text-secondary small mb-0">Project future product demand 30 days ahead to plan manufacturing batches and prevent stockouts</p>
+    </div>
+    <div class="d-flex gap-2">
+        <a href="/api/export/production-schedule" class="btn btn-outline-success btn-sm rounded-pill px-3">
+            <i class="bi bi-download me-1"></i> Download Production Plan
+        </a>
     </div>
 </div>
 
-<!-- Accuracy KPI Cards -->
+<!-- Plain English Accuracy Cards -->
 <div class="row g-3 mb-4">
     <div class="col-md-3">
-        <div class="card border-0 shadow-sm rounded-3 h-100 border-start border-primary border-4">
-            <div class="card-body">
-                <div class="text-secondary small fw-medium">MODEL ACCURACY</div>
+        <div class="card border-0 shadow-sm rounded-4 h-100 border-start border-primary border-4">
+            <div class="card-body p-3">
+                <div class="text-secondary small fw-bold text-uppercase">Forecast Confidence</div>
                 <h3 class="fw-bold my-1 text-primary">{{ metrics.accuracy_pct }}</h3>
-                <div class="text-muted small">Model: {{ metrics.model_name }}</div>
+                <div class="text-muted small">Based on historical sales patterns</div>
             </div>
         </div>
     </div>
     <div class="col-md-3">
-        <div class="card border-0 shadow-sm rounded-3 h-100 border-start border-info border-4">
-            <div class="card-body">
-                <div class="text-secondary small fw-medium">MAE (MEAN ABS ERROR)</div>
-                <h3 class="fw-bold my-1 text-info">{{ metrics.mae }} units</h3>
-                <div class="text-muted small">Average variance per day</div>
+        <div class="card border-0 shadow-sm rounded-4 h-100 border-start border-info border-4">
+            <div class="card-body p-3">
+                <div class="text-secondary small fw-bold text-uppercase">Average Daily Error</div>
+                <h3 class="fw-bold my-1 text-info">&plusmn;{{ metrics.mae }} units</h3>
+                <div class="text-muted small">Very low prediction deviation</div>
             </div>
         </div>
     </div>
     <div class="col-md-3">
-        <div class="card border-0 shadow-sm rounded-3 h-100 border-start border-warning border-4">
-            <div class="card-body">
-                <div class="text-secondary small fw-medium">RMSE (ROOT MEAN SQ)</div>
-                <h3 class="fw-bold my-1 text-warning">{{ metrics.rmse }}</h3>
-                <div class="text-muted small">Standard deviation of residuals</div>
+        <div class="card border-0 shadow-sm rounded-4 h-100 border-start border-warning border-4">
+            <div class="card-body p-3">
+                <div class="text-secondary small fw-bold text-uppercase">Planning Horizon</div>
+                <h3 class="fw-bold my-1 text-warning">30 Days Ahead</h3>
+                <div class="text-muted small">Rolling daily forecast window</div>
             </div>
         </div>
     </div>
     <div class="col-md-3">
-        <div class="card border-0 shadow-sm rounded-3 h-100 border-start border-success border-4">
-            <div class="card-body">
-                <div class="text-secondary small fw-medium">MAPE (PCT ERROR)</div>
-                <h3 class="fw-bold my-1 text-success">{{ metrics.mape }}</h3>
-                <div class="text-muted small">Mean absolute percentage error</div>
+        <div class="card border-0 shadow-sm rounded-4 h-100 border-start border-success border-4">
+            <div class="card-body p-3">
+                <div class="text-secondary small fw-bold text-uppercase">Seasonality Factor</div>
+                <h3 class="fw-bold my-1 text-success">Enabled</h3>
+                <div class="text-muted small">Adjusted for weekend & weekday spikes</div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Forecast Trend Chart -->
-<div class="card border-0 shadow-sm rounded-3 mb-4">
-    <div class="card-header bg-white border-0 py-3">
-        <h5 class="fw-bold mb-0"><i class="bi bi-graph-up-arrow text-primary me-2"></i>Aggregate 30-Day Forward Demand Forecast</h5>
+<!-- Aggregate Forecast Trend Chart -->
+<div class="card border-0 shadow-sm rounded-4 mb-4">
+    <div class="card-header bg-white border-0 pt-4 px-4 pb-2 d-flex justify-content-between align-items-center">
+        <div>
+            <h5 class="fw-bold mb-0 text-dark"><i class="bi bi-graph-up-arrow text-primary me-2"></i>Total Daily Units Needed Across All Products (Next 30 Days)</h5>
+            <div class="text-secondary small">Helps factory floor managers allocate daily assembly line capacity</div>
+        </div>
+        <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill px-3 py-1">Forward Projections</span>
     </div>
-    <div class="card-body">
-        <div style="height: 320px;">
+    <div class="card-body p-4">
+        <div style="height: 290px;">
             <canvas id="forecastChart"></canvas>
         </div>
     </div>
 </div>
 
 <!-- Demand Ranking & Inventory Risk Row -->
-<div class="row g-3 mb-4">
+<div class="row g-4 mb-4">
     <!-- Top & Low Demanded Products -->
     <div class="col-lg-5">
-        <div class="card border-0 shadow-sm rounded-3 h-100">
-            <div class="card-header bg-white border-0 py-3">
-                <h5 class="fw-bold mb-0"><i class="bi bi-fire text-danger me-2"></i>Demand Projections by Product</h5>
+        <div class="card border-0 shadow-sm rounded-4 h-100">
+            <div class="card-header bg-white border-0 pt-4 px-4 pb-2">
+                <h5 class="fw-bold mb-0 text-dark"><i class="bi bi-fire text-danger me-2"></i>Highest Demand Velocity Items</h5>
+                <div class="text-secondary small">Products that sell the fastest and require steady manufacturing runs</div>
             </div>
-            <div class="card-body p-3 pt-0">
-                <h6 class="text-secondary fw-bold small text-uppercase mb-2">High Demand Velocity (Next 30 Days)</h6>
+            <div class="card-body p-4 pt-2">
                 <ul class="list-group list-group-flush mb-4">
                     {% for p in top_demanded %}
-                    <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-2">
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-2 border-bottom">
                         <div>
                             <span class="fw-semibold text-dark">{{ p.product_name }}</span>
-                            <div class="small text-muted">Stock: {{ p.current_stock }} &bull; Reorder: {{ p.reorder_level }}</div>
+                            <div class="small text-muted">Stock: <strong>{{ p.current_stock }}</strong> &bull; Reorder Alert: {{ p.reorder_level }}</div>
                         </div>
-                        <span class="badge bg-danger-subtle text-danger border border-danger-subtle px-2 py-1">
+                        <span class="badge bg-danger-subtle text-danger border border-danger-subtle px-3 py-1 fs-6">
                             {{ p.predicted_demand }} units
                         </span>
                     </li>
                     {% endfor %}
                 </ul>
 
-                <h6 class="text-secondary fw-bold small text-uppercase mb-2">Low Demand Velocity (Next 30 Days)</h6>
+                <h6 class="text-secondary fw-bold small text-uppercase mb-2">Slow-Moving Items (Avoid Overproduction)</h6>
                 <ul class="list-group list-group-flush">
                     {% for p in low_demanded %}
-                    <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-2">
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-2 border-bottom">
                         <div>
                             <span class="fw-semibold text-dark">{{ p.product_name }}</span>
-                            <div class="small text-muted">Stock: {{ p.current_stock }}</div>
+                            <div class="small text-muted">Stock: {{ p.current_stock }} units</div>
                         </div>
-                        <span class="badge bg-secondary-subtle text-secondary px-2 py-1">
+                        <span class="badge bg-secondary-subtle text-secondary px-3 py-1">
                             {{ p.predicted_demand }} units
                         </span>
                     </li>
@@ -104,47 +113,39 @@
 
     <!-- Inventory Stock Risk Monitor -->
     <div class="col-lg-7">
-        <div class="card border-0 shadow-sm rounded-3 h-100">
-            <div class="card-header bg-white border-0 py-3 d-flex justify-content-between align-items-center">
-                <h5 class="fw-bold mb-0"><i class="bi bi-shield-exclamation text-warning me-2"></i>Inventory Risk Monitor (<code>v_inventory_demand_risk</code>)</h5>
-                <span class="badge bg-light text-secondary border">Demand vs Stock</span>
+        <div class="card border-0 shadow-sm rounded-4 h-100">
+            <div class="card-header bg-white border-0 pt-4 px-4 pb-2 d-flex justify-content-between align-items-center">
+                <div>
+                    <h5 class="fw-bold mb-0 text-dark"><i class="bi bi-shield-exclamation text-warning me-2"></i>Stockout Risk & Reorder Priority</h5>
+                    <div class="text-secondary small">Automatic safety stock calculations</div>
+                </div>
             </div>
             <div class="table-responsive p-3 pt-0">
                 <table class="table table-hover align-middle mb-0">
                     <thead class="table-light">
                         <tr>
                             <th>Product</th>
-                            <th>Category</th>
                             <th class="text-center">Current Stock</th>
                             <th class="text-center">30d Demand</th>
-                            <th>Stock Status</th>
+                            <th class="text-center">Stock Runway</th>
+                            <th>Status</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {% for item in inventory_risks %}
+                        {% for item in production_schedule %}
                         <tr>
-                            <td class="fw-semibold">{{ item.product_name }}</td>
-                            <td><span class="badge bg-light text-secondary border">{{ item.category_name }}</span></td>
+                            <td class="fw-semibold text-dark">{{ item.product_name }}</td>
                             <td class="text-center fw-bold">{{ item.stock_quantity }}</td>
-                            <td class="text-center">{{ item.predicted_30d_demand }}</td>
+                            <td class="text-center text-primary">{{ item.predicted_30d_demand }}</td>
+                            <td class="text-center">
+                                <span class="fw-bold text-{% if item.days_left <= 10 %}danger{% elif item.days_left <= 20 %}warning{% else %}success{% endif %}">
+                                    {{ item.days_left }} days
+                                </span>
+                            </td>
                             <td>
-                                {% if 'CRITICAL' in item.stock_status %}
-                                    <span class="badge bg-danger-subtle text-danger border border-danger-subtle">
-                                        <i class="bi bi-exclamation-triangle-fill me-1"></i> CRITICAL REORDER
-                                    </span>
-                                {% elif 'HIGH RISK' in item.stock_status %}
-                                    <span class="badge bg-warning-subtle text-warning border border-warning-subtle">
-                                        <i class="bi bi-exclamation-circle me-1"></i> HIGH STOCKOUT RISK
-                                    </span>
-                                {% elif 'EXCESS' in item.stock_status %}
-                                    <span class="badge bg-info-subtle text-info border border-info-subtle">
-                                        <i class="bi bi-info-circle me-1"></i> EXCESS STOCK
-                                    </span>
-                                {% else %}
-                                    <span class="badge bg-success-subtle text-success border border-success-subtle">
-                                        <i class="bi bi-check-circle me-1"></i> OPTIMAL
-                                    </span>
-                                {% endif %}
+                                <span class="badge bg-{{ item.badge_class }}-subtle text-{{ item.badge_class }} border border-{{ item.badge_class }}-subtle">
+                                    {{ item.urgency }}
+                                </span>
                             </td>
                         </tr>
                         {% endfor %}
